@@ -1,5 +1,5 @@
 FactoryBot.define do
-  sequence(:uid, 100_000) { |n| n }
+  sequence(:uid) { |n| n }
 
   factory :identity do
     uid { generate(:uid) }
